@@ -22,7 +22,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="drumImage"/>
                                 <connections>
-                                    <action selector="tapDrumButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="T5z-TY-9dG"/>
+                                    <action selector="touchDownDrumButton" destination="BYZ-38-t0r" eventType="touchDown" id="W6Y-Je-Fb2"/>
+                                    <action selector="touchUPDrumButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="mLG-vQ-9ex"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -30,6 +31,9 @@
                         <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" name="AccentColor"/>
                     </view>
+                    <connections>
+                        <outlet property="drumButton" destination="rw7-sk-8FF" id="hIe-AX-23s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
